@@ -344,8 +344,8 @@ position: relative;
 	position: relative;
 }
 .peopleImg{
-    position: absolute;
-    height: 370px;
+	position: absolute;
+    height: 475px;
     width: 400px;
     right: 8%;
 }
@@ -484,3 +484,21 @@ h2.foot{
 	color: var(--colorBlack);
 }
 /* footer code :end */
+.ulPara p{
+	font-size: 18px;
+    color: var(--colorBlack);
+    font-family: var(--regular);
+    line-height: 28px;
+	padding:25px 0px 15px;
+}
+.ulPara a{
+	font-size: 18px;
+    color: var(--colorBlack);
+    font-family: var(--wmedium);
+	color: var(--colorGreen);
+    line-height: 22px;
+	display: block;
+}
+.ulPara{
+	width: 50%;
+}
