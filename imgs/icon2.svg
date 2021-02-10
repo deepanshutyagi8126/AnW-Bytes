@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="user-icon" transform="translate(-5 -5)">
+    <path id="Path_37" data-name="Path 37" d="M33.348,34l-.568-1.426a5.227,5.227,0,0,0-4.856-3.292H20.076a5.227,5.227,0,0,0-4.856,3.292L14.652,34" fill="none" stroke="#2e2e36" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_38" data-name="Path 38" d="M27.889,15.611a5.5,5.5,0,1,1-7.778,0,5.5,5.5,0,0,1,7.778,0" fill="none" stroke="#2e2e36" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_39" data-name="Path 39" d="M15.176,6H10a4,4,0,0,0-4,4v5.176" fill="none" stroke="#2e2e36" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_40" data-name="Path 40" d="M32.824,42H38a4,4,0,0,0,4-4V32.824" fill="none" stroke="#2e2e36" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_41" data-name="Path 41" d="M6,32.824V38a4,4,0,0,0,4,4h5.176" fill="none" stroke="#2e2e36" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_42" data-name="Path 42" d="M42,15.176V10a4,4,0,0,0-4-4H32.824" fill="none" stroke="#2e2e36" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

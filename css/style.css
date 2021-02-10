@@ -1,0 +1,486 @@
+@font-face {
+	font-family: 'MontserratBold';
+	src: url(../fonts/MontserratBold.ttf);
+}
+@font-face {
+	font-family: 'WorkSansMedium';
+	src: url(../fonts/WorkSansMedium.ttf);
+}
+@font-face {
+	font-family: 'MontserratRegular';
+	src: url(../fonts/MontserratRegular.ttf);
+}
+@font-face {
+	font-family: 'MontserratLight';
+	src: url(../fonts/MontserratLight.ttf);
+}
+@font-face {
+	font-family: 'MontserratBlack';
+	src: url(../fonts/MontserratBlack.ttf);
+}
+@font-face {
+	font-family: 'MontserratItalic';
+	src: url(../fonts/MontserratItalic.ttf);
+}
+
+
+
+/* Variables for color and font family Start */
+
+:root {
+	/* Colors */
+	--colorWhite: #fff;
+	--colorBlack:#25252e;
+	--colorGreen:#01bc9a;
+	--colorGrey:#fafafa;
+
+/* font family varible */
+--bold:'MontserratBold';
+--regular:'MontserratRegular';
+--wmedium:'WorkSansMedium';
+--light:'MontserratLight';
+--black:'MontserratBlack';
+--italic: 'MontserratItalic';
+}
+
+/* Variables for color and font family End */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.nopadding {
+	padding: 0 !important;
+}
+
+button,
+a {
+	transition: all 0.35s ease 0s;
+}
+
+button:focus {
+	outline: none;
+}
+
+label {
+	margin: 0;
+}
+
+a {
+	outline: none !important;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: var(--colorWhite);
+}
+
+.boxs {
+	float: left;
+	width: 100%;
+	display: block;
+}
+/* header code :start */
+.headerInner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.headerAll{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: var(--colorBlack);
+	padding: 12px 0px;
+	z-index: 99;
+}
+.headerRight ul.menuall li{
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.headerRight ul.menuall li a{
+	font-size: 16px;
+	color: var(--colorWhite);
+	font-family: var(--wmedium);
+	position: relative;
+}
+.headerRight ul.menuall li a::before{
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 2px;
+	background: var(--colorWhite);
+	left: 0;
+	bottom: -5px;
+}
+.headerRight ul.menuall li a:hover::before{
+	width: 100%;
+	transition: 00.35s ease-out;
+}
+.headerRight ul li a.active{
+	font-family: var(--bold);
+}
+.contactt{
+	font-size: 16px;
+	color: var(--colorWhite);
+	font-family: var(--wmedium);
+	background: var(--colorGreen);
+	padding: 15px 25px;
+	display: inline-block;
+	position: relative;
+}
+.contactt::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff3;
+    z-index: 1;
+}
+.contactt:hover::before{
+    width: 100%;
+	transition: 0.35s ease-in-out;
+
+}
+.headerRight{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fixedHeader{
+	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 16%);
+}
+/* header code :end */
+
+/* heading and para code :start */
+h2.head{
+    color: var(--colorWhite);
+    font-size: 50px;
+    line-height: 60px;
+    font-family: var(--bold);
+}
+h2.head1{
+    color: var(--colorBlack);
+    font-size: 40px;
+    line-height: 48px;
+	font-family: var(--bold);
+	text-transform: capitalize;
+}
+
+p.head{
+	color: var(--colorWhite);
+	font-size: 20px;
+	line-height: 28px;
+	font-family: var(--regular);
+}
+h2.heading{
+	font-size: 20px;
+	color: var(--colorBlack);
+	font-family: var(--wmedium);
+	line-height: 24px;
+}
+p.heading{
+	font-size: 16px;
+	color: var(--colorBlack);
+	font-family: var(--regular);
+	line-height: 20px;	
+}
+.marginTop{
+margin-top: 75px;
+}
+a.learn{
+	color: var(--colorGreen);
+	font-size: 14px;
+	font-family: var(--wmedium);
+	position: relative;
+}
+a.learn::before{
+	position: absolute;
+	content: '';
+	bottom: -4px;
+	height: 2px;
+	background-color: var(--colorGreen);
+	width: 0;
+}
+a.learn:hover::before{
+	width: 100%;
+	transition: 0.35s ease-out;
+}
+.heroRight .owl-carousel .owl-item{
+	height: 500px;
+}
+.heroRight .owl-carousel .owl-dots{
+    display: block !important;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+#carousel .owl-dots button{
+	width: 12px;
+	height: 12px;
+	background: var(--colorWhite);
+	border-radius: 100%;
+	margin-right: 10px;
+	position: relative;
+}
+#carousel .owl-dots button.owl-dot.active::before{
+	position: absolute;
+	content: '';
+	height: 6px;
+	width: 6px;
+	top: 3px;
+	left: 3px;
+	border-radius: 100%;
+	background: var(--colorGreen);
+}
+#carousel .owl-dots button:last-child{
+	margin-right: 0;
+}
+/* heading and para code :end */
+/* hero-section code :start */
+.hero-section .row{
+	align-items: center;
+}
+.hero-section{
+	background: var(--colorBlack);
+	padding: 115px 0px 75px;
+}
+.heroLeft h2{
+	text-transform: capitalize;
+}
+.heroLeft p{
+	margin: 20px 0px;
+}
+.heroRight{
+	position: relative;
+}
+.heroImg{
+    position: absolute;
+    height: 500px;
+    /* top: 75px; */
+}
+.heroImg img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.creteInner h2{
+	margin: 15px 0px;
+}
+.creteInner p{
+	margin: 5px 0px;
+}
+.createInner {
+	padding: 25px;
+}
+.createInner:hover{
+	-webkit-box-shadow: 0px 3px 60px #00000029;
+    box-shadow: 0px 3px 60px #00000029;
+    -webkit-transition: all 0.35s ease 0s;
+    transition: all 0.35s ease 0s;
+}
+.worldInner .row{
+	padding: 40px 0px;
+}
+/* hero-section code :end */
+
+/* aboutPeople code :start */
+.aboutPeople{
+background: var(--colorGrey);
+padding: 75px 0px;
+background: linear-gradient(90deg, #ececec 70%, #ffffff 30%);
+}
+.peopleInner ul li{
+	margin-top: 25px;
+	display: block;
+}
+.peopleInner ul li a{
+font-size: 18px;
+color: var(--colorBlack);
+font-family: var(--wmedium);
+line-height: 22px;
+position: relative;
+}
+.peopleInner ul li a:hover{
+	color: var(--colorGreen);
+}
+.peopleInner ul li a::before{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: -4px;
+	width:0;
+	height: 2px;
+	background: var(--colorGreen);
+}
+.peopleInner ul li a:hover::before{
+	transition: 0.35s ease-out;
+	width: 100%;
+}
+.peopleInner ul li img{
+	display: none;
+}
+.peopleInner{
+	position: relative;
+}
+.peopleImg{
+    position: absolute;
+    height: 370px;
+    width: 400px;
+    right: 8%;
+}
+.peopleImg img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* aboutPeople code :end */
+
+/* headSome code :start */
+.headSome{
+	padding: 50px 0px;
+}
+.headRight p{
+	color: var(--colorBlack);
+}
+.caseContent h2{
+	font-size: 25px;
+	font-family: var(--black);
+	padding-top: 10px;
+}
+.caseContent p{
+	font-size: 15px;
+	font-family: var(--italic);
+	color: var(--colorGreen);
+}
+.caseLeft{
+	width: 500px;
+	height: 500px;
+}
+.caseLeft img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* headsome code :end */
+
+/* ready code :start */
+.ready{
+	padding: 50px 0px;
+}
+.readyInner{
+	padding: 45px 0px;
+	background: var(--colorBlack);
+}
+.readyInner{
+	text-align: center;
+}
+.readyInner a{
+	margin-top: 25px;
+}
+/* ready code :end */
+
+/* footer code :start */
+.footerAll{
+	padding: 25px 0px;
+	background: var(--colorGrey);
+}
+.footerLeft p{
+    font-size: 16px;
+    line-height: 22px;
+	color: var(--colorBlack);
+	font-family: var(--wmedium);
+	padding: 25px 0px;
+}
+.footerLeft ul li a img{
+	width: 40px;
+	height: 40px;
+}
+.footerLeft ul li{
+	margin-right: 5px;
+	display: inline-block;
+}
+.footerLeft ul li:last-child{
+	margin-right:0px;
+}
+.footerLeft ul li a{
+	background: #ccc;
+	display: block;
+}
+.footerLeft ul li a:hover{
+	transform: scale(1.2);
+	transition: 0.35s ease-out;
+}
+h2.foot{
+	font-size: 18px;
+	color: var(--colorBlack);
+	font-family: var(--bold);
+}
+.footerData ul li{
+	display: block;
+	margin-top: 25px;
+}
+.footerData ul li a,.copyLeft ul li a{
+	font-size: 16px;
+	color: var(--colorBlack);
+	font-family: var(--wmedium);
+	position: relative;
+}
+.footerData ul li a::before,.copyLeft ul li a::before{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: -4px;
+	background: var(--colorGreen);
+	height: 2px;
+	width: 0px;
+}
+.footerData ul li a:hover::before,.copyLeft ul li a:hover::before{
+	width: 100%;
+	transition: 0.35s ease-out;
+}
+.footerData ul li a:hover,.copyLeft ul li a:hover{
+	color: var(--colorGreen);
+}
+.footerData{
+	float: right;
+}
+.copyLeft ul li {
+	display: inline-block;
+	margin-right: 35px;
+}
+.copyLeft ul li:last-child{
+	margin-right: 0;
+}
+.copyRight{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 25px;
+}
+.copyRighttt p{
+	font-size: 16px;
+	color: var(--colorBlack);
+}
+/* footer code :end */
