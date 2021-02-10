@@ -262,8 +262,11 @@ a.learn:hover::before{
 	align-items: center;
 }
 .hero-section{
-	background: var(--colorBlack);
-	padding: 115px 0px 75px;
+background: var(--colorBlack);
+    padding: 115px 0px 75px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .heroLeft h2{
 	text-transform: capitalize;
