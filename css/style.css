@@ -263,7 +263,7 @@ a.learn:hover::before{
 }
 .hero-section{
 background: var(--colorBlack);
-    padding: 115px 0px 75px;
+    padding-top:75px;
     height: 100vh;
     display: flex;
     align-items: center;
