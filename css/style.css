@@ -511,10 +511,10 @@ h2.foot{
 .ulPara{
 	width: 50%;
 }
-.worldrow{
+.worldInner .row{
 	position: relative;
 }
-.worldrow::before{
+.worldInner .row::before{
 	content: '';
     position: absolute;
     background-image: url(https://mobulous.s3.ap-south-1.amazonaws.com/website/images/faq.png);
