@@ -128,11 +128,13 @@ a:focus {
 	height: 2px;
 	background: var(--colorWhite);
 	left: 0;
+	right: 0;
+	margin: auto;
 	bottom: -5px;
 }
 .headerRight ul.menuall li a:hover::before{
 	width: 100%;
-	transition: 00.35s ease-out;
+	transition: 0.45s ease-out;
 }
 .headerRight ul li a.active{
 	font-family: var(--bold);
@@ -151,6 +153,8 @@ a:focus {
     content: '';
     top: 0;
     left: 0;
+	right: 0;
+	margin: auto;
     width: 0;
     height: 100%;
     background: #fff3;
@@ -158,7 +162,7 @@ a:focus {
 }
 .contactt:hover::before{
     width: 100%;
-	transition: 0.35s ease-in-out;
+	transition: 0.45s ease-in-out;
 
 }
 .headerRight{
@@ -262,8 +266,8 @@ a.learn:hover::before{
 	align-items: center;
 }
 .hero-section{
-background: var(--colorBlack);
-    padding-top:75px;
+    background: var(--colorBlack);
+    padding-top: 75px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -331,6 +335,8 @@ position: relative;
 	position: absolute;
 	content: '';
 	left: 0;
+	right: 0;
+	margin: auto;
 	bottom: -4px;
 	width:0;
 	height: 2px;
@@ -505,3 +511,27 @@ h2.foot{
 .ulPara{
 	width: 50%;
 }
+.worldrow{
+	position: relative;
+}
+.worldrow::before{
+	content: '';
+    position: absolute;
+    background-image: url(https://mobulous.s3.ap-south-1.amazonaws.com/website/images/faq.png);
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    left: 0;
+    margin: auto;
+    right: 0;
+    animation: Scroll 10s linear 0s infinite running;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+	z-index: -1;
+}
+@keyframes Scroll {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}  
+
